@@ -1,0 +1,10 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "hosting": {
+    "source": ".",
+    "appAssociation": "AUTO",
+    "site": "studio-5477271617-f48f1"
+  }
+}
