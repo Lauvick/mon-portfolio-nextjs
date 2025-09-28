@@ -110,7 +110,7 @@ export const projectData = [
   {
     title: "Machine CNC Automatisée",
     description: "Développement d'une machine CNC 3-axes pour la dépose de colle sur guides optiques, pilotée par ESP32 avec une interface Python pour la génération de G-Code.",
-    imageUrl: "/images/cnc-machine.jpg",
+    imageUrl: "https://picsum.photos/seed/cnc/600/400",
     imageHint: "CNC machine",
     technologies: ["ESP32", "FluidNC", "Python", "G-code", "C++"],
     links: [
@@ -121,7 +121,7 @@ export const projectData = [
   {
     title: "Convertisseur USB vers RF sur FPGA",
     description: "Projet de conception d'un système de transmission RF haute vitesse en utilisant un FPGA Kintex-7, un ADC et un DAC.",
-    imageUrl: "/images/fpga-converter.jpg",
+    imageUrl: "https://picsum.photos/seed/fpga/600/400",
     imageHint: "circuit board",
     technologies: ["FPGA", "VHDL", "LVDS", "Eagle"],
     links: [
