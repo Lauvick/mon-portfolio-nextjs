@@ -115,7 +115,7 @@ export const projectData = [
     technologies: ["ESP32", "FluidNC", "Python", "G-code", "C++"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick" },
-      { icon: ExternalLink, url: "#" },
+      { icon: ExternalLink, url: "#", isLiveDemo: true },
     ],
   },
   {
