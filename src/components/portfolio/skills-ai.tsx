@@ -19,7 +19,7 @@ export function SkillsAI() {
     setIsLoading(true);
     setSummary("");
     try {
-      const result = await summarizeSkills({ cvText });
+      const result = await summarizeSkills({ cvText: cvContent });
       setSummary(result.skillsSummary);
     } catch (error) {
       console.error("Failed to summarize skills:", error);
