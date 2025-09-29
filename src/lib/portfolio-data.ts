@@ -134,6 +134,16 @@ export const projectData = [
     ],
   },
   {
+    title: "Régulateur PID pour HB-THERM",
+    description: "Conception d'un régulateur de température PID sur mesure pour un appareil HB-THERM, incluant un PCB personnalisé et une interface web de monitoring.",
+    imageUrl: typedImages['hb-therm.jpg'].src,
+    imageHint: typedImages['hb-therm.jpg'].hint,
+    technologies: ["ESP32", "C++", "PID Control", "Custom PCB"],
+    links: [
+      { icon: Github, url: "https://github.com/Lauvick/hb-therm-controller" },
+    ],
+  },
+  {
     title: "Convertisseur USB vers RF sur FPGA",
     description: "Projet de conception d'un système de transmission RF haute vitesse en utilisant un FPGA Kintex-7, un ADC et un DAC.",
     imageUrl: typedImages['fpga.jpg'].src,
