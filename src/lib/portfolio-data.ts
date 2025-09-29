@@ -1,4 +1,4 @@
-import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare } from "lucide-react";
+import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare, Video } from "lucide-react";
 
 export const cvContent = `
 LAUVICK NGOMA
@@ -119,26 +119,26 @@ export const projectData = [
     technologies: ["ESP32", "FluidNC", "Python", "G-code", "C++"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick" },
-      { icon: ExternalLink, url: "/videos/cnc-demo.mp4", isLiveDemo: true },
+      { icon: Video, url: "/videos/cnc-demo.mp4", isLiveDemo: true, text: "Démo Live" },
     ],
   },
   {
     title: "Système de Contrôle Multi-Thread de LEDs avec Zephyr RTOS",
     description: "Développement d'un système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences.",
-    imageUrl: "/zephyr-led.jpg",
-    imageHint: "zephyr led",
+    imageUrl: typedImages['zephyr-led.jpg'].src,
+    imageHint: typedImages['zephyr-led.jpg'].hint,
     technologies: ["Zephyr RTOS", "C", "ESP32", "CMake", "Git"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
-      { icon: ExternalLink, url: "/videos/zephyr-demo.mp4", isLiveDemo: true },
+      { icon: Video, url: "/videos/zephyr-demo.mp4", isLiveDemo: true, text: "Démo Live" },
     ],
   },
   {
-    title: "Régulateur PID pour HB-THERM",
-    description: "Conception d'un régulateur de température PID sur mesure pour un appareil HB-THERM, incluant un PCB personnalisé et une interface web de monitoring.",
+    title: "Régulateur pour HB-THERM",
+    description: "Système de contrôle et de surveillance pour thermorégulateurs HB-Therm via OPC UA (EUROMAP 82.1) avec support des thermocouples locaux MCP9600.",
     imageUrl: typedImages['hb-therm.jpg'].src,
     imageHint: typedImages['hb-therm.jpg'].hint,
-    technologies: ["ESP32", "C++", "PID Control", "Custom PCB"],
+    technologies: ["ESP32", "C++", "OPC UA", "MCP9600"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/hb-therm-controller" },
     ],
