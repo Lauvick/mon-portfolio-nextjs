@@ -1,0 +1,26 @@
+{
+  "cnc-machine.jpg": {
+    "src": "/cnc-machine.jpg",
+    "width": 600,
+    "height": 400,
+    "hint": "CNC machine"
+  },
+  "zephyr-led.jpg": {
+    "src": "/zephyr-led.jpg",
+    "width": 600,
+    "height": 400,
+    "hint": "zephyr led"
+  },
+  "portfolio.jpg": {
+    "src": "https://picsum.photos/seed/portfolio/600/400",
+    "width": 600,
+    "height": 400,
+    "hint": "portfolio website"
+  },
+  "fpga.jpg": {
+    "src": "https://picsum.photos/seed/fpga/600/400",
+    "width": 600,
+    "height": 400,
+    "hint": "circuit board"
+  }
+}

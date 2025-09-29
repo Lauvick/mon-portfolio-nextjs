@@ -106,12 +106,16 @@ export const experienceData = [
   },
 ];
 
+import images from '@/app/lib/placeholder-images.json';
+
+const typedImages = images as Record<string, { src: string; width: number; height: number; hint: string }>;
+
 export const projectData = [
   {
     title: "Machine CNC Automatisée",
     description: "Développement d'une machine CNC 3-axes pour la dépose de colle sur guides optiques, pilotée par ESP32 avec une interface Python pour la génération de G-Code.",
-    imageUrl: "/cnc-machine.jpg",
-    imageHint: "CNC machine",
+    imageUrl: typedImages['cnc-machine.jpg'].src,
+    imageHint: typedImages['cnc-machine.jpg'].hint,
     technologies: ["ESP32", "FluidNC", "Python", "G-code", "C++"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick" },
@@ -121,8 +125,8 @@ export const projectData = [
   {
     title: "Système de Contrôle Multi-Thread de LEDs avec Zephyr RTOS",
     description: "Développement d'un système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences.",
-    imageUrl: "/zephyr-led.jpg",
-    imageHint: "zephyr led",
+    imageUrl: typedImages['zephyr-led.jpg'].src,
+    imageHint: typedImages['zephyr-led.jpg'].hint,
     technologies: ["Zephyr RTOS", "C", "ESP32", "CMake", "Git"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
@@ -132,8 +136,8 @@ export const projectData = [
   {
     title: "Convertisseur USB vers RF sur FPGA",
     description: "Projet de conception d'un système de transmission RF haute vitesse en utilisant un FPGA Kintex-7, un ADC et un DAC.",
-    imageUrl: "https://picsum.photos/seed/fpga/600/400",
-    imageHint: "circuit board",
+    imageUrl: typedImages['fpga.jpg'].src,
+    imageHint: typedImages['fpga.jpg'].hint,
     technologies: ["FPGA", "VHDL", "LVDS", "Eagle"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick" },
@@ -142,8 +146,8 @@ export const projectData = [
   {
     title: "Portfolio Numérique",
     description: "Mon site personnel pour présenter mon parcours. Intègre une fonctionnalité d'IA pour résumer mes compétences.",
-    imageUrl: "https://picsum.photos/seed/portfolio/600/400",
-    imageHint: "portfolio website",
+    imageUrl: typedImages['portfolio.jpg'].src,
+    imageHint: typedImages['portfolio.jpg'].hint,
     technologies: ["Next.js", "Tailwind CSS", "Genkit"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/mon-portfolio-nextjs" },
