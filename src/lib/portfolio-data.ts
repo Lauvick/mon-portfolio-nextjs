@@ -119,6 +119,16 @@ export const projectData = [
     ],
   },
   {
+    title: "Système de Contrôle Multi-Thread de LEDs avec Zephyr RTOS",
+    description: "Développement d'un système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences.",
+    imageUrl: "https://picsum.photos/seed/zephyr-led/600/400",
+    imageHint: "zephyr led",
+    technologies: ["Zephyr RTOS", "C", "ESP32", "CMake", "Git"],
+    links: [
+      { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
+    ],
+  },
+  {
     title: "Convertisseur USB vers RF sur FPGA",
     description: "Projet de conception d'un système de transmission RF haute vitesse en utilisant un FPGA Kintex-7, un ADC et un DAC.",
     imageUrl: "https://picsum.photos/seed/fpga/600/400",
