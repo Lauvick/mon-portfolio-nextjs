@@ -135,7 +135,7 @@ export const projectData = [
     imageHint: "portfolio website",
     technologies: ["Next.js", "Tailwind CSS", "Genkit"],
     links: [
-      { icon: Github, url: "https://github.com/Lauvick" },
+      { icon: Github, url: "https://github.com/Lauvick/mon-portfolio-nextjs" },
     ],
   },
 ];
