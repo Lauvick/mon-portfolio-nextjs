@@ -110,7 +110,7 @@ export const projectData = [
   {
     title: "Machine CNC Automatisée",
     description: "Développement d'une machine CNC 3-axes pour la dépose de colle sur guides optiques, pilotée par ESP32 avec une interface Python pour la génération de G-Code.",
-    imageUrl: "https://picsum.photos/seed/cnc/600/400",
+    imageUrl: "/cnc-machine.jpg",
     imageHint: "CNC machine",
     technologies: ["ESP32", "FluidNC", "Python", "G-code", "C++"],
     links: [
