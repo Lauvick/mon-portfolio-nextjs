@@ -7,17 +7,34 @@ import { Card, CardContent, CardFooter, CardDescription, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { projectData } from "@/lib/portfolio-data";
-import { VideoPlayer } from "./video-player"; // Importer le nouveau composant
+import { VideoPlayer } from "./video-player";
+
+// Define a more specific type for a project link
+interface ProjectLink {
+  icon: React.ElementType;
+  url: string;
+  isLiveDemo?: boolean;
+}
+
+// Define the type for a project
+interface Project {
+  title: string;
+  description: string;
+  imageUrl: string;
+  imageHint: string;
+  technologies: string[];
+  links: ProjectLink[];
+}
+
 
 export function Projects() {
   const [videoUrl, setVideoUrl] = useState("");
   const [videoTitle, setVideoTitle] = useState("");
   const [isPlayerOpen, setPlayerOpen] = useState(false);
 
-  const handleDemoClick = (project: (typeof projectData)[0]) => {
-    // Cas spécifique pour la démo vidéo de la machine CNC
-    if (project.title === "Machine CNC Automatisée" && project.links.find(l => l.isLiveDemo)) {
-      setVideoUrl("/videos/cnc-demo.mp4");
+  const handleDemoClick = (project: Project, link: ProjectLink) => {
+    if (link.isLiveDemo) {
+      setVideoUrl(link.url);
       setVideoTitle(project.title);
       setPlayerOpen(true);
     }
@@ -36,13 +53,13 @@ export function Projects() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projectData.map((project, index) => (
               <Card key={index} className="flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                <div className="w-full">
+                <div className="relative w-full aspect-[3/2]">
                   <Image
                     src={project.imageUrl}
                     alt={project.title}
-                    width={600}
-                    height={400}
-                    className="object-cover w-full h-auto aspect-[3/2]"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     data-ai-hint={project.imageHint}
                   />
                 </div>
@@ -64,7 +81,7 @@ export function Projects() {
                             key={linkIndex} 
                             variant="default" 
                             size="sm"
-                            onClick={() => handleDemoClick(project)}
+                            onClick={() => handleDemoClick(project, link)}
                           >
                             <link.icon className="h-4 w-4 mr-2" />
                             Démo Live
