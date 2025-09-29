@@ -119,26 +119,26 @@ export const projectData = [
     technologies: ["ESP32", "FluidNC", "Python", "G-code", "C++"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick" },
-      { icon: Video, url: "/videos/cnc-demo.mp4", isLiveDemo: true, text: "Démo Live" },
+      { icon: Video, url: "/videos/cnc-demo.mp4", isLiveDemo: true },
     ],
   },
   {
     title: "Système de Contrôle Multi-Thread de LEDs avec Zephyr RTOS",
-    description: "Développement d'un système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences.",
+    description: "Système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences, avec gestion de priorités et synchronisation par sémaphores.",
     imageUrl: typedImages['zephyr-led.jpg'].src,
     imageHint: typedImages['zephyr-led.jpg'].hint,
     technologies: ["Zephyr RTOS", "C", "ESP32", "CMake", "Git"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
-      { icon: Video, url: "/videos/zephyr-demo.mp4", isLiveDemo: true, text: "Démo Live" },
+      { icon: Video, url: "/videos/zephyr-demo.mp4", isLiveDemo: true },
     ],
   },
   {
     title: "Régulateur pour HB-THERM",
-    description: "Système de contrôle et de surveillance pour thermorégulateurs HB-Therm via OPC UA (EUROMAP 82.1) avec support des thermocouples locaux MCP9600.",
+    description: "Développement d'un système web embarqué sur Raspberry Pi pour le contrôle et monitoring temps réel de thermorégulateurs HB-Therm, communicant en OPC UA (EUROMAP 82.1) et intégrant des capteurs locaux (MCP9600) via I2C.",
     imageUrl: typedImages['hb-therm.jpg'].src,
     imageHint: typedImages['hb-therm.jpg'].hint,
-    technologies: ["ESP32", "C++", "OPC UA", "MCP9600"],
+    technologies: ["Python", "Flask", "OPC UA", "I2C", "Raspberry Pi", "SQLite"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/hb-therm-controller" },
     ],
