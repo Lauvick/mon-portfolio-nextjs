@@ -18,18 +18,17 @@ export function Projects() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectData.map((project, index) => (
             <Card key={index} className="flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-              <CardHeader className="p-0">
-                <div className="relative aspect-video w-full">
-                  <Image
-                    src={project.imageUrl}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    data-ai-hint={project.imageHint}
-                  />
-                </div>
-              </CardHeader>
+              <div className="relative w-full">
+                <Image
+                  src={project.imageUrl}
+                  alt={project.title}
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-auto"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  data-ai-hint={project.imageHint}
+                />
+              </div>
               <CardContent className="p-6 flex-grow">
                 <CardTitle className="mb-2 font-headline">{project.title}</CardTitle>
                 <CardDescription className="mb-4">{project.description}</CardDescription>
