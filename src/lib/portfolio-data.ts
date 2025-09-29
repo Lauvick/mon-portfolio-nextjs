@@ -125,8 +125,8 @@ export const projectData = [
   {
     title: "Système de Contrôle Multi-Thread de LEDs avec Zephyr RTOS",
     description: "Développement d'un système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences.",
-    imageUrl: typedImages['zephyr-led.jpg'].src,
-    imageHint: typedImages['zephyr-led.jpg'].hint,
+    imageUrl: "/zephyr-led.jpg",
+    imageHint: "zephyr led",
     technologies: ["Zephyr RTOS", "C", "ESP32", "CMake", "Git"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
