@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function Footer() {
@@ -21,8 +21,8 @@ export function Footer() {
             </Link>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <Link href="#" aria-label="Twitter">
-              <Twitter className="h-5 w-5" />
+            <Link href="mailto:nichirenngomalauvick.2000@gmail.com" aria-label="Email">
+              <Mail className="h-5 w-5" />
             </Link>
           </Button>
         </div>
