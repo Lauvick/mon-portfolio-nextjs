@@ -1,5 +1,5 @@
 
-import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare, Video, Image as ImageIcon } from "lucide-react";
+import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare, Video, Image as ImageIcon, Server } from "lucide-react";
 import images from '@/app/lib/placeholder-images.json';
 
 export const cvContent = `
@@ -105,6 +105,19 @@ export const experienceData = [
       "Conception et routage de PCB avec le logiciel Eagle.",
     ],
     icon: BotMessageSquare,
+  },
+  {
+    company: "ENSP, Brazzaville",
+    role: "Projet de Licence Pro - Messagerie d'Entreprise",
+    period: "2019 - 2020",
+    tasks: [
+      "Déploiement d'une infrastructure de messagerie avec Active Directory et MS Exchange.",
+      "Administration de Windows Server 2008 R2 et configuration DNS (ensp.cg).",
+      "Virtualisation de l'environnement serveur avec VirtualBox.",
+      "Création et gestion des comptes utilisateurs et boîtes aux lettres.",
+      "Amélioration de la communication et sécurisation des échanges internes.",
+    ],
+    icon: Server,
   },
 ];
 
