@@ -22,11 +22,5 @@
     "width": 600,
     "height": 400,
     "hint": "circuit board"
-  },
-  "hb-therm.jpg": {
-    "src": "https://picsum.photos/seed/hbtemp/600/400",
-    "width": 600,
-    "height": 400,
-    "hint": "temperature controller"
   }
 }

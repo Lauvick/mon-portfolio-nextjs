@@ -117,6 +117,7 @@ export const projectData = [
     imageHint: typedImages['cnc-machine.jpg'].hint,
     technologies: ["ESP32", "FluidNC", "C++", "Mécanique"],
     links: [
+      { icon: Github, url: "https://github.com/Lauvick/machine-cnc-optique" },
       { icon: Video, url: "/videos/cnc-demo.mp4", isLiveDemo: true },
     ],
   },
@@ -133,8 +134,8 @@ export const projectData = [
   {
     title: "Système de Contrôle Multi-Thread de LEDs avec Zephyr RTOS",
     description: "Système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences, avec gestion de priorités et synchronisation par sémaphores.",
-    imageUrl: "/zephyr-led.jpg",
-    imageHint: "zephyr led",
+    imageUrl: typedImages['zephyr-led.jpg'].src,
+    imageHint: typedImages['zephyr-led.jpg'].hint,
     technologies: ["Zephyr RTOS", "C", "ESP32", "CMake", "Git"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
@@ -144,9 +145,9 @@ export const projectData = [
   {
     title: "Régulateur pour HB-THERM",
     description: "Solution de contrôle et monitoring pour thermorégulateurs HB-Therm via OPC UA (EUROMAP 82.1). Le système, basé sur Raspberry Pi, intègre des thermocouples locaux (MCP9600) et offre une interface web pour le suivi temps réel.",
-    imageUrl: typedImages['hb-therm.jpg'].src,
-    imageHint: typedImages['hb-therm.jpg'].hint,
-    technologies: ["Python", "Flask", "OPC UA", "I2C", "Raspberry Pi", "SQLite"],
+    imageUrl: "/images/hb-therm-ui.jpg",
+    imageHint: "monitoring dashboard",
+    technologies: ["Python", "Flask", "OPC UA", "I2C", "Raspberry Pi", "MCP9600"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/hb-therm-controller" },
     ],
@@ -166,7 +167,7 @@ export const projectData = [
     description: "Mon site personnel pour présenter mon parcours. Intègre une fonctionnalité d'IA pour résumer mes compétences.",
     imageUrl: typedImages['portfolio.jpg'].src,
     imageHint: typedImages['portfolio.jpg'].hint,
-    technologies: ["Next.js", "Tailwind CSS", "Genkit"],
+    technologies: ["Next.js", "Tailwind CSS", "Genkit", "Firebase"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/mon-portfolio-nextjs" },
     ],
