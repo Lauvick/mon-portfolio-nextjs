@@ -117,7 +117,6 @@ export const projectData = [
     imageHint: typedImages['cnc-machine.jpg'].hint,
     technologies: ["ESP32", "FluidNC", "C++", "Mécanique"],
     links: [
-      { icon: Github, url: "https://github.com/Lauvick/machine-cnc-optique" },
       { icon: Video, url: "/videos/cnc-demo.mp4", isLiveDemo: true },
     ],
   },
@@ -135,8 +134,8 @@ export const projectData = [
   {
     title: "Système de Contrôle Multi-Thread de LEDs avec Zephyr RTOS",
     description: "Système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences, avec gestion de priorités et synchronisation par sémaphores.",
-    imageUrl: "/zephyr-led.jpg",
-    imageHint: "zephyr led",
+    imageUrl: typedImages['zephyr-led.jpg'].src,
+    imageHint: typedImages['zephyr-led.jpg'].hint,
     technologies: ["Zephyr RTOS", "C", "ESP32", "CMake", "Git"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
