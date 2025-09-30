@@ -1,4 +1,4 @@
-import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare, Video } from "lucide-react";
+import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare, Video, Image as ImageIcon } from "lucide-react";
 import images from '@/app/lib/placeholder-images.json';
 
 export const cvContent = `
@@ -129,13 +129,14 @@ export const projectData = [
     technologies: ["Python", "Tkinter", "Matplotlib", "G-code"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/Generateur-GCode-Colle" },
+      { icon: ImageIcon, url: "/images/gcode-ui-1.jpg", isImagePreview: true },
     ],
   },
   {
     title: "Système de Contrôle Multi-Thread de LEDs avec Zephyr RTOS",
     description: "Système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences, avec gestion de priorités et synchronisation par sémaphores.",
-    imageUrl: typedImages['zephyr-led.jpg'].src,
-    imageHint: typedImages['zephyr-led.jpg'].hint,
+    imageUrl: "/zephyr-led.jpg",
+    imageHint: "zephyr led",
     technologies: ["Zephyr RTOS", "C", "ESP32", "CMake", "Git"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
@@ -150,6 +151,7 @@ export const projectData = [
     technologies: ["Python", "Flask", "OPC UA", "I2C", "Raspberry Pi", "MCP9600"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/hb-therm-controller" },
+      { icon: ImageIcon, url: "/images/hb-therm-ui.jpg", isImagePreview: true },
     ],
   },
   {

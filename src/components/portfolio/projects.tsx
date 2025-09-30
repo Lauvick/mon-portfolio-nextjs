@@ -8,12 +8,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { projectData } from "@/lib/portfolio-data";
 import { VideoPlayer } from "./video-player";
+import { ImageViewer } from "./image-viewer";
 
 // Define a more specific type for a project link
 interface ProjectLink {
   icon: React.ElementType;
   url: string;
   isLiveDemo?: boolean;
+  isImagePreview?: boolean;
 }
 
 // Define the type for a project
@@ -32,11 +34,23 @@ export function Projects() {
   const [videoTitle, setVideoTitle] = useState("");
   const [isPlayerOpen, setPlayerOpen] = useState(false);
 
+  const [imageUrl, setImageUrl] = useState("");
+  const [imageTitle, setImageTitle] = useState("");
+  const [isViewerOpen, setViewerOpen] = useState(false);
+
   const handleDemoClick = (project: Project, link: ProjectLink) => {
     if (link.isLiveDemo) {
       setVideoUrl(link.url);
       setVideoTitle(project.title);
       setPlayerOpen(true);
+    }
+  };
+
+  const handleImageClick = (project: Project, link: ProjectLink) => {
+    if (link.isImagePreview) {
+      setImageUrl(link.url);
+      setImageTitle(project.title);
+      setViewerOpen(true);
     }
   };
 
@@ -88,6 +102,19 @@ export function Projects() {
                           </Button>
                         )
                       }
+                      if (link.isImagePreview) {
+                        return (
+                          <Button 
+                            key={linkIndex} 
+                            variant="default" 
+                            size="sm"
+                            onClick={() => handleImageClick(project, link)}
+                          >
+                            <link.icon className="h-4 w-4 mr-2" />
+                            Résultat
+                          </Button>
+                        )
+                      }
                       return (
                         <Button key={linkIndex} variant="outline" asChild size="sm">
                           <Link href={link.url} target="_blank" rel="noopener noreferrer">
@@ -109,6 +136,12 @@ export function Projects() {
         onOpenChange={setPlayerOpen}
         videoSrc={videoUrl}
         title={videoTitle}
+      />
+      <ImageViewer
+        isOpen={isViewerOpen}
+        onOpenChange={setViewerOpen}
+        imageSrc={imageUrl}
+        title={imageTitle}
       />
     </>
   );
