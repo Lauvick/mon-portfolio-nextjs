@@ -106,16 +106,15 @@ export const experienceData = [
     ],
     icon: BotMessageSquare,
   },
-  {
+    {
     company: "ENSP, Brazzaville",
     role: "Projet de Licence Pro - Messagerie d'Entreprise",
     period: "2019 - 2020",
     tasks: [
-      "Déploiement d'une infrastructure de messagerie avec Active Directory et MS Exchange.",
-      "Administration de Windows Server 2008 R2 et configuration DNS (ensp.cg).",
-      "Virtualisation de l'environnement serveur avec VirtualBox.",
-      "Création et gestion des comptes utilisateurs et boîtes aux lettres.",
-      "Amélioration de la communication et sécurisation des échanges internes.",
+        "Déploiement d'une infrastructure de messagerie avec Active Directory et MS Exchange.",
+        "Gestion centralisée des utilisateurs et des authentifications.",
+        "Configuration des rôles Exchange (Transport Hub, Mailbox, Client Access).",
+        "Amélioration de la communication interne et sécurisation des échanges.",
     ],
     icon: Server,
   },
@@ -178,6 +177,14 @@ export const projectData = [
     ],
   },
   {
+    title: "Messagerie d'Entreprise (Licence Pro)",
+    description: "Déploiement d'une infrastructure de messagerie avec Active Directory et MS Exchange Server pour améliorer et sécuriser la communication interne à l'ENSP.",
+    imageUrl: typedImages['server-room.jpg'].src,
+    imageHint: typedImages['server-room.jpg'].hint,
+    technologies: ["Windows Server", "Active Directory", "MS Exchange", "DNS", "VirtualBox"],
+    links: [],
+  },
+  {
     title: "Portfolio Numérique",
     description: "Mon site personnel pour présenter mon parcours. Intègre une fonctionnalité d'IA pour résumer mes compétences.",
     imageUrl: "/logo.svg",
@@ -188,3 +195,5 @@ export const projectData = [
     ],
   },
 ];
+
+    

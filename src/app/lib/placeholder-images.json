@@ -1,3 +1,4 @@
+
 {
   "cnc-machine.jpg": {
     "src": "/cnc-machine.jpg",
@@ -11,10 +12,24 @@
     "height": 400,
     "hint": "zephyr led"
   },
-  "fpga.jpg": {
-    "src": "/fpga.jpg",
+  "server-room.jpg": {
+    "src": "https://picsum.photos/seed/server-room/600/400",
     "width": 600,
     "height": 400,
-    "hint": "circuit board"
+    "hint": "server room"
+  },
+  "fpga.jpg": {
+    "src": "https://picsum.photos/seed/fpga-board/600/400",
+    "width": 600,
+    "height": 400,
+    "hint": "FPGA board"
+  },
+  "portfolio-logo.svg": {
+    "src": "https://picsum.photos/seed/technology/600/400",
+    "width": 600,
+    "height": 400,
+    "hint": "technology"
   }
 }
+
+    
