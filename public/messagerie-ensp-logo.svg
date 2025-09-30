@@ -97,7 +97,7 @@
   </g>
   
   <!-- Text subtitle -->
-  <text x="100" y="180" font-family="Arial, sans-serif" font-size="9" 
+  <text x="100" y="175" font-family="Arial, sans-serif" font-size="9" 
         font-weight="300" fill="#94a3b8" text-anchor="middle" letter-spacing="2">
     MESSAGERIE ENSP
   </text>
