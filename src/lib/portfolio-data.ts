@@ -1,4 +1,5 @@
 import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare, Video } from "lucide-react";
+import images from '@/app/lib/placeholder-images.json';
 
 export const cvContent = `
 LAUVICK NGOMA
@@ -106,8 +107,6 @@ export const experienceData = [
   },
 ];
 
-import images from '@/app/lib/placeholder-images.json';
-
 const typedImages = images as Record<string, { src: string; width: number; height: number; hint: string }>;
 
 export const projectData = [
@@ -118,7 +117,7 @@ export const projectData = [
     imageHint: typedImages['cnc-machine.jpg'].hint,
     technologies: ["ESP32", "FluidNC", "Python", "G-code", "C++"],
     links: [
-      { icon: Github, url: "https://github.com/Lauvick" },
+      { icon: Github, url: "https://github.com/Lauvick/Generateur-GCode-Colle" },
       { icon: Video, url: "/videos/cnc-demo.mp4", isLiveDemo: true },
     ],
   },
