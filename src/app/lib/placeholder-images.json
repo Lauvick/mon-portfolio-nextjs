@@ -17,17 +17,5 @@
     "width": 600,
     "height": 400,
     "hint": "server room"
-  },
-  "fpga.jpg": {
-    "src": "/images/fpga-1.jpg",
-    "width": 600,
-    "height": 400,
-    "hint": "FPGA board"
-  },
-  "portfolio-logo.svg": {
-    "src": "https://picsum.photos/seed/technology/600/400",
-    "width": 600,
-    "height": 400,
-    "hint": "technology"
   }
 }
