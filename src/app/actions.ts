@@ -3,6 +3,7 @@
 import { z } from "zod";
 import { firestore } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { sendContactEmail } from "@/ai/flows/send-contact-email-flow";
 
 const contactSchema = z.object({
   name: z.string().min(2, { message: "Le nom doit contenir au moins 2 caractères." }),
@@ -23,11 +24,20 @@ export async function submitContactForm(data: z.infer<typeof contactSchema>) {
   }
 
   try {
+    const formData = validatedFields.data;
+    
+    // 1. Save to Firestore
     const docData = {
-      ...validatedFields.data,
+      ...formData,
       submittedAt: serverTimestamp(),
     };
     await addDoc(collection(firestore, "contacts"), docData);
+
+    // 2. Trigger email sending flow (fire and forget)
+    sendContactEmail(formData).catch(emailError => {
+        // Log the error, but don't block the user response
+        console.error("Failed to send contact email:", emailError);
+    });
 
     return {
       success: true,
