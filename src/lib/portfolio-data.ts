@@ -161,7 +161,7 @@ export const projectData = [
     imageHint: typedImages['fpga.jpg'].hint,
     technologies: ["FPGA", "VHDL", "LVDS", "Eagle"],
     links: [
-      { icon: ExternalLink, url: "/realisation-fpga.pdf" },
+      { icon: ExternalLink, url: "/realisation-fpga.pdf", isPdf: true },
     ],
   },
   {

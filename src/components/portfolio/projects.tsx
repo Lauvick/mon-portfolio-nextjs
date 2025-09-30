@@ -16,6 +16,7 @@ interface ProjectLink {
   url: string;
   isLiveDemo?: boolean;
   isImagePreview?: boolean;
+  isPdf?: boolean;
 }
 
 // Define the type for a project
@@ -91,9 +92,9 @@ export function Projects() {
                     {project.links.map((link, linkIndex) => {
                       if (link.isLiveDemo) {
                         return (
-                          <Button 
-                            key={linkIndex} 
-                            variant="default" 
+                          <Button
+                            key={linkIndex}
+                            variant="default"
                             size="sm"
                             onClick={() => handleDemoClick(project, link)}
                           >
@@ -104,14 +105,24 @@ export function Projects() {
                       }
                       if (link.isImagePreview) {
                         return (
-                          <Button 
-                            key={linkIndex} 
-                            variant="default" 
+                          <Button
+                            key={linkIndex}
+                            variant="default"
                             size="sm"
                             onClick={() => handleImageClick(project, link)}
                           >
                             <link.icon className="h-4 w-4 mr-2" />
                             Résultat
+                          </Button>
+                        )
+                      }
+                      if (link.isPdf) {
+                        return (
+                          <Button key={linkIndex} variant="default" asChild size="sm">
+                            <Link href={link.url} target="_blank" rel="noopener noreferrer">
+                              <link.icon className="h-4 w-4 mr-2" />
+                              Résultat
+                            </Link>
                           </Button>
                         )
                       }
@@ -131,7 +142,7 @@ export function Projects() {
           </div>
         </div>
       </section>
-      <VideoPlayer 
+      <VideoPlayer
         isOpen={isPlayerOpen}
         onOpenChange={setPlayerOpen}
         videoSrc={videoUrl}
