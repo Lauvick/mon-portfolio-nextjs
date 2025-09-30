@@ -3,15 +3,14 @@
 import { useState, useEffect } from "react";
 import { getAuth, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, User } from "firebase/auth";
 import { collection, getDocs, orderBy, query, Timestamp } from "firebase/firestore";
-import { firestore, app } from "@/lib/firebase";
+import { firestore, auth } from "@/lib/firebase"; // Import de 'auth'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { formatDistanceToNow } from 'date-fns';
 import { fr } from 'date-fns/locale';
 
-// Initialize Firebase Auth
-const auth = getAuth(app);
+// L'objet 'auth' est maintenant importé, donc pas besoin de le réinitialiser ici.
 const provider = new GoogleAuthProvider();
 
 interface ContactMessage {
@@ -130,6 +129,7 @@ function Auth() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Utilisation de l'instance 'auth' importée
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       setLoading(false);
@@ -138,12 +138,14 @@ function Auth() {
   }, []);
 
   const handleSignIn = () => {
+    // Utilisation de l'instance 'auth' importée
     signInWithPopup(auth, provider).catch((error) => {
       console.error("Authentication error:", error);
     });
   };
 
   const handleSignOut = () => {
+    // Utilisation de l'instance 'auth' importée
     auth.signOut();
   }
 
