@@ -18,7 +18,7 @@
     "hint": "portfolio website"
   },
   "fpga.jpg": {
-    "src": "https://picsum.photos/seed/fpga/600/400",
+    "src": "/fpga.jpg",
     "width": 600,
     "height": 400,
     "hint": "circuit board"
