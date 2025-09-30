@@ -19,7 +19,7 @@
     "hint": "server room"
   },
   "fpga.jpg": {
-    "src": "https://picsum.photos/seed/fpga-board/600/400",
+    "src": "/images/fpga-1.jpg",
     "width": 600,
     "height": 400,
     "hint": "FPGA board"
@@ -31,5 +31,3 @@
     "hint": "technology"
   }
 }
-
-    

@@ -169,8 +169,8 @@ export const projectData = [
   {
     title: "Convertisseur USB vers RF sur FPGA",
     description: "Projet de conception d'un système de transmission RF haute vitesse en utilisant un FPGA Kintex-7, un ADC et un DAC.",
-    imageUrl: "/images/fpga-1.jpg",
-    imageHint: "FPGA board circuit",
+    imageUrl: typedImages['fpga.jpg'].src,
+    imageHint: typedImages['fpga.jpg'].hint,
     technologies: ["FPGA", "VHDL", "LVDS", "Eagle"],
     links: [
       { icon: ExternalLink, url: "/realisation-fpga.pdf", isPdf: true },
@@ -195,5 +195,3 @@ export const projectData = [
     ],
   },
 ];
-
-    
