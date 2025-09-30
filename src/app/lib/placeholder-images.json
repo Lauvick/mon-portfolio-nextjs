@@ -12,7 +12,7 @@
     "hint": "zephyr led"
   },
   "portfolio.jpg": {
-    "src": "https://picsum.photos/seed/portfolio/600/400",
+    "src": "https://picsum.photos/seed/web-design/600/400",
     "width": 600,
     "height": 400,
     "hint": "portfolio website"
