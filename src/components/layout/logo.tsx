@@ -6,8 +6,8 @@ export function Logo({ className }: { className?: string }) {
     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className={cn(className)}>
       <defs>
         <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: "hsl(var(--primary))", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "hsl(var(--accent))", stopOpacity: 1 }} />
+          <stop offset="0%" style={{ stopColor: "#1e40af", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#06b6d4", stopOpacity: 1 }} />
         </linearGradient>
 
         <linearGradient id="circuitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
