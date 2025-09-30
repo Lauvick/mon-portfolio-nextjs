@@ -2,10 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Code, Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { Logo } from "./logo";
 
 const navItems = [
   { name: "À Propos", href: "#about" },
@@ -51,7 +52,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-          <Code className="h-6 w-6 text-primary" />
+          <Logo className="h-10 w-10" />
           <span>Lauvick Ngoma</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -76,7 +77,7 @@ export function Header() {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 font-bold text-lg mb-4">
-                  <Code className="h-6 w-6 text-primary" />
+                  <Logo className="h-10 w-10" />
                   <span>Lauvick Ngoma</span>
                 </Link>
                 {navItems.map((item) => (
