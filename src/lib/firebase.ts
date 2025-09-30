@@ -14,7 +14,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+// This check is important to prevent re-initializing the app on hot reloads.
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+
 const firestore = getFirestore(app);
 const auth = getAuth(app);
 
