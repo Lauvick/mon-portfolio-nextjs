@@ -11,11 +11,5 @@
     "width": 600,
     "height": 400,
     "hint": "zephyr led"
-  },
-  "server-room.jpg": {
-    "src": "https://picsum.photos/seed/server-room/600/400",
-    "width": 600,
-    "height": 400,
-    "hint": "server room"
   }
 }

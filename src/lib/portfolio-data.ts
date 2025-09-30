@@ -179,8 +179,8 @@ export const projectData = [
   {
     title: "Messagerie d'Entreprise (Licence Pro)",
     description: "Déploiement d'une infrastructure de messagerie avec Active Directory et MS Exchange Server pour améliorer et sécuriser la communication interne à l'ENSP.",
-    imageUrl: typedImages['server-room.jpg'].src,
-    imageHint: typedImages['server-room.jpg'].hint,
+    imageUrl: "/messagerie-ensp-logo.svg",
+    imageHint: "email server logo",
     technologies: ["Windows Server", "Active Directory", "MS Exchange", "DNS", "VirtualBox"],
     links: [],
   },
