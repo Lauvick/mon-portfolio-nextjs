@@ -112,20 +112,29 @@ const typedImages = images as Record<string, { src: string; width: number; heigh
 export const projectData = [
   {
     title: "Machine CNC Automatisée",
-    description: "Développement d'une machine CNC 3-axes pour la dépose de colle sur guides optiques, pilotée par ESP32 avec une interface Python pour la génération de G-Code.",
+    description: "Développement d'une machine CNC 3-axes pour la dépose de colle sur guides optiques, pilotée par ESP32. Précision de 0.03mm et pilotage via firmware FluidNC.",
     imageUrl: typedImages['cnc-machine.jpg'].src,
     imageHint: typedImages['cnc-machine.jpg'].hint,
-    technologies: ["ESP32", "FluidNC", "Python", "G-code", "C++"],
+    technologies: ["ESP32", "FluidNC", "C++", "Mécanique"],
+    links: [
+      { icon: Video, url: "/videos/cnc-demo.mp4", isLiveDemo: true },
+    ],
+  },
+  {
+    title: "Interface de Génération G-Code",
+    description: "Application de bureau en Python pour piloter la machine CNC. Elle permet de calibrer la machine via la caméra et de générer des trajectoires G-Code précises.",
+    imageUrl: '/images/gcode-ui-1.jpg',
+    imageHint: "software interface",
+    technologies: ["Python", "Tkinter", "Matplotlib", "G-code"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/Generateur-GCode-Colle" },
-      { icon: Video, url: "/videos/cnc-demo.mp4", isLiveDemo: true },
     ],
   },
   {
     title: "Système de Contrôle Multi-Thread de LEDs avec Zephyr RTOS",
     description: "Système embarqué temps réel sur ESP32 avec Zephyr RTOS, gérant 3 threads concurrents pour contrôler des LEDs à différentes fréquences, avec gestion de priorités et synchronisation par sémaphores.",
-    imageUrl: typedImages['zephyr-led.jpg'].src,
-    imageHint: typedImages['zephyr-led.jpg'].hint,
+    imageUrl: "/zephyr-led.jpg",
+    imageHint: "zephyr led",
     technologies: ["Zephyr RTOS", "C", "ESP32", "CMake", "Git"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
@@ -134,7 +143,7 @@ export const projectData = [
   },
   {
     title: "Régulateur pour HB-THERM",
-    description: "Développement d'un système web embarqué sur Raspberry Pi pour le contrôle et monitoring temps réel de thermorégulateurs HB-Therm, communicant en OPC UA (EUROMAP 82.1) et intégrant des capteurs locaux (MCP9600) via I2C.",
+    description: "Solution de contrôle et monitoring pour thermorégulateurs HB-Therm via OPC UA (EUROMAP 82.1). Le système, basé sur Raspberry Pi, intègre des thermocouples locaux (MCP9600) et offre une interface web pour le suivi temps réel.",
     imageUrl: typedImages['hb-therm.jpg'].src,
     imageHint: typedImages['hb-therm.jpg'].hint,
     technologies: ["Python", "Flask", "OPC UA", "I2C", "Raspberry Pi", "SQLite"],
