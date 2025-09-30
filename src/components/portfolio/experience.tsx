@@ -1,3 +1,4 @@
+
 import { experienceData } from "@/lib/portfolio-data";
 import { CheckCircle2 } from "lucide-react";
 
@@ -8,7 +9,7 @@ export function Experience() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Expérience Professionnelle</h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-            De stages formateurs à des missions freelance, chaque expérience a été une opportunité de grandir et d'apprendre.
+            De stages formateurs à des projets persos, chaque expérience a été une opportunité de grandir et d'apprendre.
           </p>
         </div>
         <div className="relative">
