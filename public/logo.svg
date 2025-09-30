@@ -102,7 +102,7 @@
   </g>
   
   <!-- Subtle text around the bottom -->
-  <text x="100" y="175" font-family="Arial, sans-serif" font-size="8" font-weight="300" 
+  <text x="100" y="135" font-family="Arial, sans-serif" font-size="8" font-weight="300" 
         text-anchor="middle" fill="#ffffff" opacity="0.6" letter-spacing="2">
     EMBEDDED SYSTEMS
   </text>

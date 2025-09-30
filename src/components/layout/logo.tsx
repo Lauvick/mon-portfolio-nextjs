@@ -114,7 +114,7 @@ export function Logo({ className }: { className?: string }) {
 
       <text
         x="100"
-        y="175"
+        y="135"
         fontFamily="Arial, sans-serif"
         fontSize="8"
         fontWeight="300"
