@@ -167,8 +167,8 @@ export const projectData = [
   {
     title: "Portfolio Numérique",
     description: "Mon site personnel pour présenter mon parcours. Intègre une fonctionnalité d'IA pour résumer mes compétences.",
-    imageUrl: typedImages['portfolio.jpg'].src,
-    imageHint: typedImages['portfolio.jpg'].hint,
+    imageUrl: "/logo.svg",
+    imageHint: "portfolio website logo",
     technologies: ["Next.js", "Tailwind CSS", "Genkit", "Firebase"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/mon-portfolio-nextjs" },

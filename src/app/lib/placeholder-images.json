@@ -11,12 +11,6 @@
     "height": 400,
     "hint": "zephyr led"
   },
-  "portfolio.jpg": {
-    "src": "https://picsum.photos/seed/technology/600/400",
-    "width": 600,
-    "height": 400,
-    "hint": "portfolio website"
-  },
   "fpga.jpg": {
     "src": "/fpga.jpg",
     "width": 600,
