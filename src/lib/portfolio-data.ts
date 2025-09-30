@@ -1,3 +1,4 @@
+
 import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare, Video, Image as ImageIcon } from "lucide-react";
 import images from '@/app/lib/placeholder-images.json';
 
@@ -160,7 +161,7 @@ export const projectData = [
     imageHint: typedImages['fpga.jpg'].hint,
     technologies: ["FPGA", "VHDL", "LVDS", "Eagle"],
     links: [
-      { icon: Github, url: "https://github.com/Lauvick" },
+      { icon: ExternalLink, url: "/realisation-fpga.pdf" },
     ],
   },
   {
