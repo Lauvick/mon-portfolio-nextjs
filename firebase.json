@@ -4,7 +4,6 @@
   },
   "hosting": {
     "source": ".",
-    "appAssociation": "AUTO",
-    "site": "portfolio-lauvick"
+    "appAssociation": "AUTO"
   }
 }
