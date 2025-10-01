@@ -1,9 +1,10 @@
+
 "use client";
 
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download } from 'lucide-react';
 
 export function Hero() {
   const handleScrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -35,9 +36,9 @@ export function Hero() {
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 <Link href="#contact" onClick={handleScrollToContact}>Me Contacter</Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="#projects">
-                  Voir mes projets <ArrowDown className="ml-2 h-4 w-4" />
+               <Button asChild variant="outline" size="lg">
+                <Link href="/CV_Lauvick_Ngoma.pdf" target="_blank" rel="noopener noreferrer">
+                  Télécharger mon CV <Download className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
