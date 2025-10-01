@@ -13,7 +13,20 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh bg-background">
       <Header />
       <main className="flex-1">
-        <Hero />
+        <div 
+          className="w-full"
+          style={{
+            backgroundImage: `
+              radial-gradient(circle at 50% 30%, hsla(220, 40%, 15%, 0.9), hsla(220, 40%, 5%, 0.9) 80%),
+              url('/logo.svg')
+            `,
+            backgroundSize: 'cover, 40%',
+            backgroundPosition: 'center, center 25%',
+            backgroundRepeat: 'no-repeat, no-repeat',
+          }}
+        >
+          <Hero />
+        </div>
         <AnimatedSection>
           <About />
         </AnimatedSection>
