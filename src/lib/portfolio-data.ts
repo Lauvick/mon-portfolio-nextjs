@@ -156,6 +156,16 @@ export const projectData = [
     ],
   },
   {
+    title: "Moteur de Jeu 3D en C++",
+    description: "Un moteur de jeu 3D en C++ et OpenGL, inspiré de '3D Game Engine Architecture', avec un graphe de scène, une bibliothèque mathématique, un rendu par shaders et une physique de base.",
+    imageUrl: "https://picsum.photos/seed/3dengine/600/400",
+    imageHint: "3D game engine",
+    technologies: ["C++", "OpenGL", "Architecture Moteur", "CMake"],
+    links: [
+      { icon: Github, url: "https://github.com/Lauvick/3D-Game-Engine" },
+    ],
+  },
+  {
     title: "Régulateur pour HB-THERM",
     description: "Solution de contrôle et monitoring pour thermorégulateurs HB-Therm via OPC UA (EUROMAP 82.1). Le système, basé sur Raspberry Pi, intègre des thermocouples locaux (MCP9600) et offre une interface web pour le suivi temps réel.",
     imageUrl: "/images/hb-therm-ui.jpg",
