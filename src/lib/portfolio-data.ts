@@ -158,8 +158,8 @@ export const projectData = [
   {
     title: "Moteur de Jeu 3D en C++",
     description: "Un moteur de jeu 3D en C++ et OpenGL, inspiré de '3D Game Engine Architecture', avec un graphe de scène, une bibliothèque mathématique, un rendu par shaders et une physique de base.",
-    imageUrl: "https://picsum.photos/seed/3dengine/600/400",
-    imageHint: "3D game engine",
+    imageUrl: "/images/3d-engine.svg",
+    imageHint: "3D engine logo",
     technologies: ["C++", "OpenGL", "Architecture Moteur", "CMake"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/3D-Game-Engine" },
