@@ -156,9 +156,9 @@ export const projectData = [
     ],
   },
     {
-    title: "Simulateur de Coeur 3D",
+    title: "Simulateur de visualisation du coeur 3D",
     description: "Une simulation 3D interactive d'un cœur humain, développée avec mon moteur de jeu. Le projet met en œuvre des techniques de rendu avancées pour visualiser les battements cardiaques.",
-    imageUrl: "/images/3d-engine.svg",
+    imageUrl: "/images/3d-heart.svg",
     imageHint: "3D heart simulation",
     technologies: ["C++17", "OpenGL", "Moteur 3D", "Simulation"],
     links: [
