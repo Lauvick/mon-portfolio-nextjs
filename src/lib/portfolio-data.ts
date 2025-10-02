@@ -163,6 +163,7 @@ export const projectData = [
     technologies: ["C++", "OpenGL", "Architecture Moteur", "CMake"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/3D-Game-Engine" },
+      { icon: Video, url: "/videos/demo_3D.mp4", isLiveDemo: true },
     ],
   },
   {
