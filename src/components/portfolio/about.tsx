@@ -9,7 +9,7 @@ export function About() {
           <div className="md:col-span-2 space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">À Propos de Moi</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Spécialisé dans la conception de systèmes intelligents et l’automatisation industrielle, je combine expertise matérielle et logicielle pour développer des solutions innovantes, précises et adaptées aux enjeux industriels. Mon approche allie rigueur technique, créativité et optimisation des processus.
+              Ingénieur spécialisé dans la conception de systèmes intelligents et l’automatisation, je combine une expertise matérielle et logicielle pour développer des solutions innovantes. Mon objectif est de créer des technologies précises et adaptées aux enjeux industriels modernes, en alliant rigueur technique, créativité et optimisation des processus.
             </p>
             <h3 className="text-2xl font-bold tracking-tighter font-headline mt-6">Ce qui me motive</h3>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">

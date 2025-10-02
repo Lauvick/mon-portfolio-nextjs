@@ -1,5 +1,5 @@
 
-import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare, Video, Image as ImageIcon, Server } from "lucide-react";
+import { GraduationCap, Briefcase, Github, ExternalLink, BotMessageSquare, Video, Image as ImageIcon, Server, HeartPulse } from "lucide-react";
 import images from '@/app/lib/placeholder-images.json';
 
 export const cvContent = `
@@ -153,6 +153,17 @@ export const projectData = [
     links: [
       { icon: Github, url: "https://github.com/Lauvick/zephyr-multi-thread-leds" },
       { icon: Video, url: "/videos/zephyr-demo.mp4", isLiveDemo: true },
+    ],
+  },
+    {
+    title: "Simulateur de Coeur 3D",
+    description: "Une simulation 3D interactive d'un cœur humain, développée avec mon moteur de jeu. Le projet met en œuvre des techniques de rendu avancées pour visualiser les battements cardiaques.",
+    imageUrl: "/images/3d-engine.svg",
+    imageHint: "3D heart simulation",
+    technologies: ["C++17", "OpenGL", "Moteur 3D", "Simulation"],
+    links: [
+      { icon: Github, url: "https://github.com/Lauvick/3D-Game-Engine" },
+      { icon: Video, url: "/videos/heart-sim-demo.mp4", isLiveDemo: true },
     ],
   },
   {
