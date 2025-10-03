@@ -155,7 +155,7 @@ export const projectData = [
       { icon: Video, url: "/videos/zephyr-demo.mp4", isLiveDemo: true },
     ],
   },
-  {
+    {
     title: "Simulateur de visualisation du coeur 3D",
     description: "Une simulation 3D interactive d'un cœur humain, développée avec mon moteur de jeu. Le projet met en œuvre des techniques de rendu avancées pour visualiser les battements cardiaques.",
     imageUrl: "/images/3d-heart.svg",
@@ -227,5 +227,3 @@ export const projectData = [
     ],
   },
 ];
-
-    
