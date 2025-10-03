@@ -170,7 +170,7 @@ export const projectData = [
     title: "Moteur de Jeu 3D en C++",
     description: "Un moteur de jeu 3D en C++17 et OpenGL 4.6, basé sur une architecture ECS (Entity-Component-System). Inclut un graphe de scène, une physique de base et un rendu par shaders.",
     imageUrl: "/images/3d-engine.svg",
-    imageHint: "3D engine logo",
+    imageHint: "3D engine code",
     technologies: ["C++17", "OpenGL 4.6", "ECS", "Architecture Moteur", "CMake"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/3D-Game-Engine" },
@@ -196,6 +196,7 @@ export const projectData = [
     technologies: ["Arduino", "C++", "Python", "Tkinter", "PID Control"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/arduino-mega-control-system" },
+      { icon: Video, url: "/videos/arduino-control-demo.mp4", isLiveDemo: true }
     ],
   },
   {
@@ -227,3 +228,5 @@ export const projectData = [
     ],
   },
 ];
+
+    
