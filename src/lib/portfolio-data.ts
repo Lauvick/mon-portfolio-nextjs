@@ -155,7 +155,7 @@ export const projectData = [
       { icon: Video, url: "/videos/zephyr-demo.mp4", isLiveDemo: true },
     ],
   },
-    {
+  {
     title: "Simulateur de visualisation du coeur 3D",
     description: "Une simulation 3D interactive d'un cœur humain, développée avec mon moteur de jeu. Le projet met en œuvre des techniques de rendu avancées pour visualiser les battements cardiaques.",
     imageUrl: "/images/3d-heart.svg",
@@ -188,6 +188,16 @@ export const projectData = [
       { icon: ImageIcon, url: "/images/hb-therm-ui.jpg", isImagePreview: true },
     ],
   },
+   {
+    title: "Système de Contrôle Industriel sur Arduino",
+    description: "Système de contrôle et de supervision pour un processus industriel, basé sur une carte Arduino Mega. Inclut une interface de bureau en Python pour la surveillance en temps réel de la température et du niveau, avec contrôle PID.",
+    imageUrl: "/images/arduino-control.svg",
+    imageHint: "arduino control system",
+    technologies: ["Arduino", "C++", "Python", "Tkinter", "PID Control"],
+    links: [
+      { icon: Github, url: "https://github.com/Lauvick/arduino-mega-control-system" },
+    ],
+  },
   {
     title: "Convertisseur USB vers RF sur FPGA",
     description: "Projet de conception d'un système de transmission RF haute vitesse en utilisant un FPGA Kintex-7, un ADC et un DAC.",
@@ -217,3 +227,5 @@ export const projectData = [
     ],
   },
 ];
+
+    
