@@ -196,7 +196,7 @@ export const projectData = [
     technologies: ["Arduino", "C++", "Python", "Tkinter", "PID Control"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/arduino-mega-control-system" },
-      { icon: Video, url: "/videos/arduino-control-demo.mp4", isLiveDemo: true }
+      { icon: Video, url: "/video/demo.mp4", isLiveDemo: true }
     ],
   },
   {
@@ -228,5 +228,3 @@ export const projectData = [
     ],
   },
 ];
-
-    
