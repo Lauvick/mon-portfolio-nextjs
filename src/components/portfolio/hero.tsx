@@ -37,7 +37,7 @@ export function Hero() {
                 <Link href="#contact" onClick={handleScrollToContact}>Me Contacter</Link>
               </Button>
                <Button asChild variant="outline" size="lg">
-                <Link href="/CV_Lauvick_Ngoma.pdf" target="_blank" rel="noopener noreferrer">
+                <Link href="/CV_Lauvick_NGOMA.pdf" target="_blank" rel="noopener noreferrer">
                   Télécharger mon CV <Download className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
