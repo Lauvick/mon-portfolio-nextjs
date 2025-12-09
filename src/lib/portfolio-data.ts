@@ -106,7 +106,7 @@ export const experienceData = [
     ],
     icon: BotMessageSquare,
   },
-    {
+  {
     company: "ENSP, Brazzaville",
     role: "Projet de Licence Pro - Messagerie d'Entreprise",
     period: "2019 - 2020",
