@@ -136,12 +136,12 @@ export const projectData = [
   {
     title: "Interface de Génération G-Code",
     description: "Application de bureau en Python pour piloter la machine CNC. Elle permet de calibrer la machine via la caméra et de générer des trajectoires G-Code précises.",
-    imageUrl: '/gcode-ui-1.jpg',
+    imageUrl: '/images/gcode-ui-1.jpg',
     imageHint: "software interface",
     technologies: ["Python", "Tkinter", "Matplotlib", "G-code"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/Generateur-GCode-Colle" },
-      { icon: ImageIcon, url: "/gcode-ui-1.jpg", isImagePreview: true },
+      { icon: ImageIcon, url: "/images/gcode-ui-1.jpg", isImagePreview: true },
     ],
   },
   {
@@ -158,7 +158,7 @@ export const projectData = [
     {
     title: "Simulateur de visualisation du coeur 3D",
     description: "Une simulation 3D interactive d'un cœur humain, développée avec mon moteur de jeu. Le projet met en œuvre des techniques de rendu avancées pour visualiser les battements cardiaques.",
-    imageUrl: "/3d-heart.svg",
+    imageUrl: "/images/3d-heart.svg",
     imageHint: "3D heart simulation",
     technologies: ["C++17", "OpenGL", "Moteur 3D", "Simulation"],
     links: [
@@ -169,7 +169,7 @@ export const projectData = [
   {
     title: "Moteur de Jeu 3D en C++",
     description: "Un moteur de jeu 3D en C++17 et OpenGL 4.6, basé sur une architecture ECS (Entity-Component-System). Inclut un graphe de scène, une physique de base et un rendu par shaders.",
-    imageUrl: "/3d-engine.svg",
+    imageUrl: "/images/3d-engine.svg",
     imageHint: "3D engine code",
     technologies: ["C++17", "OpenGL 4.6", "ECS", "Architecture Moteur", "CMake"],
     links: [
@@ -180,18 +180,18 @@ export const projectData = [
   {
     title: "Régulateur pour HB-THERM",
     description: "Solution de contrôle et monitoring pour thermorégulateurs HB-Therm via OPC UA (EUROMAP 82.1). Le système, basé sur Raspberry Pi, intègre des thermocouples locaux (MCP9600) et offre une interface web pour le suivi temps réel.",
-    imageUrl: "/hb-therm-ui.jpg",
+    imageUrl: "/images/hb-therm-ui.jpg",
     imageHint: "monitoring dashboard",
     technologies: ["Python", "Flask", "OPC UA", "I2C", "Raspberry Pi", "MCP9600"],
     links: [
       { icon: Github, url: "https://github.com/Lauvick/hb-therm-controller" },
-      { icon: ImageIcon, url: "/hb-therm-ui.jpg", isImagePreview: true },
+      { icon: ImageIcon, url: "/images/hb-therm-ui.jpg", isImagePreview: true },
     ],
   },
    {
     title: "Système de Contrôle Industriel sur Arduino",
     description: "Système de contrôle et de supervision pour un processus industriel, basé sur une carte Arduino Mega. Inclut une interface de bureau en Python pour la surveillance en temps réel de la température et du niveau, avec contrôle PID.",
-    imageUrl: "/arduino-control.svg",
+    imageUrl: "/images/arduino-control.svg",
     imageHint: "arduino control system",
     technologies: ["Arduino", "C++", "Python", "Tkinter", "PID Control"],
     links: [
