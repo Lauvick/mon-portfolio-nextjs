@@ -6,7 +6,12 @@ Le site a été développé avec Next.js, React, Tailwind CSS et intègre des fo
 
 ## Déploiement
 
-Le projet est déployé sur Firebase App Hosting.
+Le projet est déployé sur Firebase App Hosting. Le déploiement est automatique à chaque `git push` sur la branche principale.
+
+Pour simplifier le processus, vous pouvez utiliser la commande suivante :
+`npm run deploy`
+
+Cela ajoutera, validera et poussera vos changements, déclenchant ainsi un nouveau déploiement.
 
 ## Pour commencer
 
