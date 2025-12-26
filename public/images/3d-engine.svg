@@ -1,0 +1,81 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cubeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cubeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b2ff7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a1fb3;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cubeGrad3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f72585;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b5179e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Grille de fond (symbolisant l'ECS) -->
+  <g opacity="0.1">
+    <line x1="0" y1="100" x2="400" y2="100" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="400" y2="200" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="400" y2="300" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="400" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="400" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="400" stroke="#00d4ff" stroke-width="1"/>
+  </g>
+  
+  <!-- Cube 3D isométrique central -->
+  <g transform="translate(200, 180)">
+    <!-- Face avant (cyan) -->
+    <path d="M -60 20 L 0 -20 L 60 20 L 60 80 L 0 120 L -60 80 Z" 
+          fill="url(#cubeGrad1)" opacity="0.9"/>
+    
+    <!-- Face droite (violet) -->
+    <path d="M 60 20 L 120 60 L 120 120 L 60 80 Z" 
+          fill="url(#cubeGrad2)" opacity="0.8"/>
+    
+    <!-- Face dessus (rose) -->
+    <path d="M 0 -20 L 60 20 L 120 60 L 60 20 Z" 
+          fill="url(#cubeGrad3)" opacity="0.95"/>
+    
+    <!-- Contours brillants -->
+    <path d="M -60 20 L 0 -20 L 60 20" stroke="#00ffff" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 60 20 L 120 60 L 120 120" stroke="#b185ff" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- Particules/points (symbolisant les entities) -->
+  <circle cx="80" cy="100" r="3" fill="#00d4ff" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="150" r="3" fill="#7b2ff7" opacity="0.8">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="300" r="3" fill="#f72585" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="280" r="3" fill="#00ffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Lignes de connexion (symbolisant les systems) -->
+  <line x1="80" y1="100" x2="200" y2="160" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+  <line x1="320" y1="150" x2="200" y2="160" stroke="#7b2ff7" stroke-width="1" opacity="0.3"/>
+  <line x1="100" y1="300" x2="200" y2="200" stroke="#f72585" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Texte -->
+  <text x="200" y="320" font-family="'Courier New', monospace" font-size="28" font-weight="bold" 
+        fill="#00d4ff" text-anchor="middle">3D ENGINE</text>
+  <text x="200" y="345" font-family="'Courier New', monospace" font-size="12" 
+        fill="#7b2ff7" text-anchor="middle">C++17 • ECS • OpenGL 4.6</text>
+</svg>
