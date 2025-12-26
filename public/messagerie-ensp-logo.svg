@@ -1,0 +1,104 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="envelopeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="serverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bgCircle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgCircle)" opacity="0.95"/>
+  
+  <!-- Server rack (bas du logo) -->
+  <g transform="translate(100, 130)">
+    <!-- Server body -->
+    <rect x="-30" y="-25" width="60" height="35" rx="3" 
+          fill="url(#serverGradient)" filter="url(#shadow)"/>
+    
+    <!-- Server lines (détails) -->
+    <line x1="-25" y1="-15" x2="25" y2="-15" stroke="#064e3b" stroke-width="1.5"/>
+    <line x1="-25" y1="-5" x2="25" y2="-5" stroke="#064e3b" stroke-width="1.5"/>
+    <line x1="-25" y1="5" x2="25" y2="5" stroke="#064e3b" stroke-width="1.5"/>
+    
+    <!-- LED indicators -->
+    <circle cx="-20" cy="-10" r="2" fill="#22d3ee"/>
+    <circle cx="-14" cy="-10" r="2" fill="#22d3ee"/>
+    <circle cx="-20" cy="0" r="2" fill="#10b981"/>
+    <circle cx="-14" cy="0" r="2" fill="#10b981"/>
+  </g>
+  
+  <!-- Envelope (centre) -->
+  <g transform="translate(100, 80)" filter="url(#shadow)">
+    <!-- Envelope body -->
+    <path d="M -35,-20 L -35,20 L 35,20 L 35,-20 Z" 
+          fill="url(#envelopeGradient)" stroke="#1e40af" stroke-width="2"/>
+    
+    <!-- Envelope flap back -->
+    <path d="M -35,-20 L 0,5 L 35,-20" 
+          fill="#2563eb" stroke="#1e40af" stroke-width="2"/>
+    
+    <!-- @ symbol on envelope -->
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="24" 
+          font-weight="bold" fill="#ffffff" text-anchor="middle">@</text>
+  </g>
+  
+  <!-- Connection arrows (serveur -> email) -->
+  <g opacity="0.6">
+    <!-- Arrow left -->
+    <path d="M 70,110 L 70,95 L 75,100 L 70,95 L 65,100" 
+          stroke="#60a5fa" stroke-width="2" fill="none"/>
+    
+    <!-- Arrow right -->
+    <path d="M 130,110 L 130,95 L 135,100 L 130,95 L 125,100" 
+          stroke="#60a5fa" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Network nodes (petits cercles de connexion) -->
+  <circle cx="50" cy="100" r="4" fill="#60a5fa" opacity="0.8"/>
+  <circle cx="150" cy="100" r="4" fill="#60a5fa" opacity="0.8"/>
+  <circle cx="100" cy="60" r="4" fill="#60a5fa" opacity="0.8"/>
+  
+  <!-- Connection lines -->
+  <line x1="50" y1="100" x2="70" y2="90" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="100" x2="130" y2="90" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+  <line x1="100" y1="60" x2="100" y2="65" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Outer ring markers -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#475569" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Active Directory icon subtil (coin supérieur droit) -->
+  <g transform="translate(145, 40)" opacity="0.7">
+    <rect x="0" y="0" width="8" height="8" fill="#3b82f6" rx="1"/>
+    <rect x="10" y="0" width="8" height="8" fill="#3b82f6" rx="1"/>
+    <rect x="0" y="10" width="8" height="8" fill="#3b82f6" rx="1"/>
+    <rect x="10" y="10" width="8" height="8" fill="#3b82f6" rx="1"/>
+  </g>
+  
+  <!-- Text subtitle -->
+  <text x="100" y="175" font-family="Arial, sans-serif" font-size="9" 
+        font-weight="300" fill="#94a3b8" text-anchor="middle" letter-spacing="2">
+    MESSAGERIE ENSP
+  </text>
+</svg>

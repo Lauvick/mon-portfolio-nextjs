@@ -202,7 +202,7 @@ export const projectData = [
   {
     title: "Convertisseur USB vers RF sur FPGA",
     description: "Projet de conception d'un système de transmission RF haute vitesse en utilisant un FPGA Kintex-7, un ADC et un DAC.",
-    imageUrl: "/images/fpga.jpg",
+    imageUrl: "/fpga.jpg",
     imageHint: "FPGA board",
     technologies: ["FPGA", "VHDL", "LVDS", "Eagle"],
     links: [
@@ -212,7 +212,7 @@ export const projectData = [
   {
     title: "Messagerie d'Entreprise (Licence Pro)",
     description: "Déploiement d'une infrastructure de messagerie avec Active Directory et MS Exchange Server pour améliorer et sécuriser la communication interne à l'ENSP.",
-    imageUrl: "/images/messagerie-ensp-logo.svg",
+    imageUrl: "/messagerie-ensp-logo.svg",
     imageHint: "email server logo",
     technologies: ["Windows Server", "Active Directory", "MS Exchange", "DNS", "VirtualBox"],
     links: [],
